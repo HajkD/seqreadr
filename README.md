@@ -1,6 +1,6 @@
 # seqreadr
 
-Read Biological Sequences with R.
+__Read Biological Sequences with R.__
 
 ### Motivation:
 
@@ -60,4 +60,11 @@ https://github.com/HajkD/seqreadr/issues
 * `read.genome()`: Read the genome of a given organism (DNA)
 * `read.proteome()`: Read the proteome of a given organism (Protein)
 * `read.cds()`: Read the CDS of a given organism (DNA)
+
+### GFF/GTF File Formats
+
+* `read.gff()`: 
+
+
+
 
