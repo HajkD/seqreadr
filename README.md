@@ -2,12 +2,22 @@
 
 Read Biological Sequences with R.
 
+### Motivation:
+
+Several (standardized) file formats have been published and are actively used
+to store, exchange, and analyze biological sequences. The `seqreadr` package
+aims to provide read/write functions to work with this variety of sequence file formats.
+
+To avoid re-inventing the wheel the `seqreadr` package relies on existing interface functions implemented in a variety of R packages. However, additional functionality for
+sequence quality control is provided by the functions implemented in `seqreadr`.
+Furthermore, `seqreadr` aims to provide a complete collection of sequence file formats and is based on a unifying terminology and nomenclature to avoid learning different package styles. etc.
+
+
 ## Tutorials
 
 Use Cases for each Sequence File Format:
 
-* [FastA]()
-* [FastQ]()
+* [FastA/FastQ](https://github.com/HajkD/seqreadr/blob/master/vignettes/FastA.Rmd)
 * [BAM]()
 * [SAM]()
 * [GFF/GTF]()
