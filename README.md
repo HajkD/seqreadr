@@ -1,0 +1,2 @@
+# seqreadr
+Read Biological Sequences
