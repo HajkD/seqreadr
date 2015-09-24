@@ -21,8 +21,8 @@ the corresponding sequence as string in the second column, and the sequence leng
 in the third column.
 }
 \description{
-Read an organism specific CDS file stored in fasta or fastq format.
-In case the input file includes corrupt sequences (= sequences that do not fulfull the triplet criteria) users can specify the \code{delete.corrupt = TRUE} argument
+Read an organism specific Coding Sequence (CDS) file stored in fasta or fastq format.
+In case the input file includes corrupt sequences (= sequences that do not fulfill the triplet criteria) users can specify the \code{delete.corrupt = TRUE} argument
 to remove corrupt sequences from the input file.
 }
 \details{
