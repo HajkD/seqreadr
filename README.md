@@ -10,7 +10,7 @@ aims to provide read/write functions to work with this variety of sequence file 
 
 To avoid re-inventing the wheel the `seqreadr` package relies on existing interface functions implemented in a variety of R packages. However, additional functionality for
 sequence quality control is provided by the functions implemented in `seqreadr`.
-Furthermore, `seqreadr` aims to provide a complete collection of sequence file formats and is based on a unifying terminology and nomenclature to avoid learning different package styles. etc.
+Furthermore, `seqreadr` aims to provide a complete collection of sequence file formats and is based on a unifying terminology and nomenclature to avoid learning different package styles etc.
 
 
 ## Tutorials
