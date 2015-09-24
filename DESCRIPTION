@@ -1,0 +1,39 @@
+Package: seqreadr
+Type: Package
+Title: Read Biological Sequences
+Version: 0.0.1
+Date: 2015-09-24
+Authors@R: as.person(c(
+    "Hajk-Georg Drost <hajk-georg.drost@informatik.uni-halle.de> [aut, cre]"
+    ))
+Maintainer: Hajk-Georg Drost <hajk-georg.drost@informatik.uni-halle.de>
+Description: Read biological sequences into R. 
+License: GPL-3
+SystemRequirements: C++
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Depends:
+    R (>= 3.1.1),
+Imports:
+    seqinr,
+    data.table,
+    parallel (>= 3.0.2),
+    dplyr (>= 0.3.0.2),
+    doParallel (>= 1.0.8),
+    foreach (>= 1.4.2),
+    Rcpp (>= 0.11.3),
+    Biostrings,
+    RSQLite (>= 0.11.4),
+    stringr (>= 0.6.2),
+    IRanges,
+    GenomicRanges,
+    refGenome,
+    DBI (>= 0.3.1)
+Suggests: 
+    knitr (>= 1.6),
+    rmarkdown (>= 0.3.3),
+    devtools (>= 1.6.1),
+    testthat (>= 0.9.1)
+LinkingTo: Rcpp
+URL: https://github.com/HajkD/seqreadr
+BugReports: https://github.com/HajkD/seqreadr/issues
