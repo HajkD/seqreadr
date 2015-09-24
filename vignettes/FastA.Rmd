@@ -1,0 +1,9 @@
+---
+title: "Reading FastA/FastQ Files"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Reading FastA/FastQ Files}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\usepackage[utf8]{inputenc}
+---
