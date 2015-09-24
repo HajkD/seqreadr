@@ -4,38 +4,50 @@
 \alias{read.cds}
 \title{Read the CDS of a given organism}
 \usage{
-read.cds(file, format, delete_corrupt = TRUE, ...)
+read.cds(file, format, delete.corrupt = FALSE, ...)
 }
 \arguments{
 \item{file}{a character string specifying the path to the file storing the CDS.}
 
 \item{format}{a character string specifying the file format used to store the CDS, e.g. "fasta", "fatsq".}
 
-\item{delete_corrupt}{a logical value indicating whether corrupt base triplets should be removed from the input \code{file}.}
+\item{delete.corrupt}{a logical value indicating whether corrupt base triplets should be removed from the input \code{file}.}
 
 \item{...}{additional arguments that are used by the \code{\link[Biostrings]{readDNAStringSet}} function.}
 }
 \value{
-A data.table storing the gene id in the first column and the corresponding
-sequence as string in the second column.
+A \code{\link{data.frame}} storing the \code{gene id} in the first column,
+the corresponding sequence as string in the second column, and the sequence length
+in the third column.
 }
 \description{
-This function reads an organism specific CDS stored in a defined file format.
+Read an organism specific CDS file stored in fasta or fastq format.
+In case the input file includes corrupt sequences (= sequences that do not fulfull the triplet criteria) users can specify the \code{delete.corrupt = TRUE} argument
+to remove corrupt sequences from the input file.
 }
 \details{
 The \code{read.cds} function takes a string specifying the path to the cds file
 of interest as first argument.
 
-It is possible to read in different proteome file standards such as \emph{fasta} or \emph{fastq}.
+For example, CDS files fulfilling the fasta file format can be downloaded from http://www.ensembl.org/info/data/ftp/index.html.
 
-CDS stored in fasta files can be downloaded from http://www.ensembl.org/info/data/ftp/index.html.
+Alternatively users
 }
 \examples{
-\dontrun{
+### Example Non-Corrupt File
 # reading a cds file stored in fasta format
-Ath.cds <- read.cds(system.file('seqs/ortho_thal_cds.fasta', package = 'orthologr'),
+Ath.cds <- read.cds(system.file('seqs/ortho_thal_cds.fasta', package = 'seqreadr'),
                     format = "fasta")
-}
+
+dplyr::glimpse(Ath.cds)
+
+### Example Corrupt File
+# reading a cds file stored in fasta format
+Ath.cds <- read.cds(system.file('seqs/ortho_thal_cds_corrupt.fasta', package = 'seqreadr'),
+                    format         = "fasta",
+                    delete.corrupt = TRUE)
+
+dplyr::glimpse(Ath.cds)
 }
 \author{
 Hajk-Georg Drost
