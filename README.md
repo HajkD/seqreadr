@@ -39,8 +39,15 @@ https://github.com/HajkD/seqreadr/issues
 
 ## Based on the following packages
 
-* [Biostrings]()
-* [refGenome]()
-* [GenomicRanges]()
+* [Biostrings](http://bioconductor.org/packages/release/bioc/html/Biostrings.html)
+* [refGenome](https://cran.r-project.org/web/packages/refGenome/index.html)
+* [GenomicRanges](http://bioconductor.org/packages/release/bioc/html/GenomicRanges.html)
 
+## Input functions implemented in `seqreadr` 
+
+### FastA/FastQ File Formats
+
+* `read.genome()`: Read the genome of a given organism (DNA)
+* `read.proteome()`: Read the proteome of a given organism (Protein)
+* `read.cds()`: Read the CDS of a given organism (DNA)
 
