@@ -9,32 +9,30 @@ read.genome(file, format, ...)
 \arguments{
 \item{file}{a character string specifying the path to the file storing the genome.}
 
-\item{format}{a character string specifying the file format used to store the genome, e.g. "fasta", "fastq".}
+\item{format}{a character string specifying the file format used to store the genome, e.g. \code{format = "fasta"} or \code{format = "fastq"}.}
 
 \item{...}{additional arguments that are used by the \code{\link[Biostrings]{readDNAStringSet}} function.}
 }
 \value{
-A data.table storing the gene id in the first column and the corresponding
-sequence as string in the second column.
+A \code{\link{data.frame}} storing the \code{gene id} in the first column, the corresponding sequence as string in the second column, and the sequence length in the third column.
 }
 \description{
-This function reads an organism specific genome stored in a defined file format.
+Read an organism specific genome stored in fasta/fastq file format.
 }
 \details{
 The \code{read.genome} function takes a string specifying the path to the genome file
 of interest as first argument.
 
-It is possible to read in different genome file standards such as \emph{fasta} or \emph{fastq}.
 Genomes stored in fasta files can be downloaded from http://ensemblgenomes.org/info/genomes.
 }
 \examples{
-\dontrun{
 # reading a genome stored in a fasta file
-Ath.genome <- read.genome(system.file('seqs/ortho_thal_cds.fasta', package = 'orthologr'),
+Ath.genome <- read.genome(system.file('seqs/ortho_thal_cds.fasta', package = 'seqreadr'),
                            format = "fasta")
-}
+
+dplyr::glimpse(Ath.genome)
 }
 \author{
-Hajk-Georg Drost and Sarah Scharfenberg
+Hajk-Georg Drost
 }
 
