@@ -18,8 +18,7 @@ Furthermore, `seqreadr` aims to provide a complete collection of sequence file f
 Use Cases for each Sequence File Format:
 
 * [FastA/FastQ](https://github.com/HajkD/seqreadr/blob/master/vignettes/FastA.Rmd)
-* [BAM]()
-* [SAM]()
+* [SAM/BAM](https://github.com/HajkD/seqreadr/blob/master/vignettes/SAM.Rmd)
 * [GFF/GTF]()
 * [BED/Big Bed]()
 * [PSL]()
