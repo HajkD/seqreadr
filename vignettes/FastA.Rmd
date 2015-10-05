@@ -10,3 +10,4 @@ vignette: >
 
 # Reading FastA/FastQ Files
 
+The [FastA]() file format is specified as 
