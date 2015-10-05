@@ -1,0 +1,13 @@
+---
+title: "Reading SAM/BAM Files"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Reading SAM/BAM Files}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\usepackage[utf8]{inputenc}
+---
+
+# Reading SAM/BAM Files
+
+The [SAM/BAM](http://samtools.github.io/hts-specs/SAMv1.pdf) file format specifications ...
