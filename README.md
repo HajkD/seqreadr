@@ -63,6 +63,7 @@ https://github.com/HajkD/seqreadr/issues
 ### GFF/GTF File Formats
 
 * `read.gtf()`: Read GTF (General Transfer Format) Files
+* `write.gtf()`: Write GTF files to hard drive
 
 
 ### BED File Formats
