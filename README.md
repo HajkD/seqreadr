@@ -68,4 +68,5 @@ https://github.com/HajkD/seqreadr/issues
 ### BED File Formats
 
 * `read.bed()`: Read BED files
+* `write.bed()`: Write BED files to hard drive
 
