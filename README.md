@@ -1,6 +1,6 @@
 # seqreadr
 
-__Read Biological Sequences with R.__
+__Read Biological Sequences File Formats with R.__
 
 ### Motivation:
 
