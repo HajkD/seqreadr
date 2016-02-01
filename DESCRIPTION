@@ -1,13 +1,13 @@
 Package: seqreadr
 Type: Package
-Title: Read Biological Sequences
+Title: Read Biological Sequence File Formats
 Version: 0.0.1
 Date: 2015-09-24
 Authors@R: as.person(c(
     "Hajk-Georg Drost <hajk-georg.drost@informatik.uni-halle.de> [aut, cre]"
     ))
 Maintainer: Hajk-Georg Drost <hajk-georg.drost@informatik.uni-halle.de>
-Description: Read biological sequences into R.
+Description: Read biological sequence file formats into R.
 License: GPL-3
 SystemRequirements: C++
 VignetteBuilder: knitr
